@@ -1,5 +1,4 @@
 theme: jekyll-theme-minimal
 title: Translational Immunogenomics Lab @ UNC
 description: Collective of labs at UNC Chapel Hill working on harnessing experimental and computational immunology to create new therapies and bring them to the clinic. 
-
-logo: logo.png
+logo: https://til-unc.github.io/logo.png
