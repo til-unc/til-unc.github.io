@@ -1,1 +1,6 @@
-Test blog post
+---
+layout: post
+title: Blog
+---
+
+# Test blog post
