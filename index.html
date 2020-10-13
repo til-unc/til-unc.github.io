@@ -1,0 +1,21 @@
+<h2>Members</h2>
+<ul>
+  <li>
+    <a href="https://unclineberger.org/vincent/">Ben Vincent, MD</a>
+  </li>
+  <li>
+    <a href="http://rubinsteyn.web.unc.edu">Alex Rubinsteyn, PhD</a>
+  </li>
+  <li>
+    <a href="https://unclineberger.org/directory/jared-weiss/">Jared Weiss, MD</a>
+  </li>
+</ul>
+
+<h2>Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
