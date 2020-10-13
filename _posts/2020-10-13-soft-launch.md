@@ -2,7 +2,7 @@
 layout: post
 title: Soft launch of the Translational Immunogenomics Lab at UNC
 tag: immunogenomics
-date: 10/13/2020
+date: 2020-10-13
 author: Alex Rubinsteyn
 ---
 
