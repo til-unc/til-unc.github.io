@@ -18,14 +18,12 @@ layout: default
 <h2>Blog Posts</h2>
 {% for post in site.posts %}
   <div class="post">
-    <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+    <h3 class="post-title">
+      <i><span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span></i>: <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h2>
-
-    <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
-
+    </h3>
+    
     {{ post.excerpt }}
     
     <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
