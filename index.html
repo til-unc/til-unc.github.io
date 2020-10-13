@@ -15,18 +15,19 @@ layout: default
   </li>
 </ul>
 
-<h2>Posts</h2>
-{% for post in paginator.posts %}
+<h2>Blog Posts</h2>
+{% for post in site.posts %}
   <div class="post">
-    <h1 class="post-title">
+    <h2 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h1>
+    </h2>
 
     <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
 
     {{ post.excerpt }}
+    
     <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
    
   </div>
