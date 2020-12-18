@@ -4,15 +4,15 @@ layout: default
 
 <h2>Members</h2>
 <ul>
-	<li><img src="ben.png" /> 
+	<li><img src="ben.png" width="137" /> 
     <a href="https://unclineberger.org/vincent/">Ben Vincent, MD</a>
   </li>
   <li>
-	<img src="alex.png" />
+	<img src="alex.png" width="137" />
     <a href="http://rubinsteyn.web.unc.edu">Alex Rubinsteyn, PhD</a>
   </li>
   <li>
-	  <img src="jared.png" />
+	  <img src="jared.png" width="137" />
     <a href="https://unclineberger.org/directory/jared-weiss/">Jared Weiss, MD</a>
   </li>
 </ul>
@@ -21,7 +21,7 @@ layout: default
 {%- for post in site.posts -%}
   <div class="post">
     <h3 class="post-title">
-      <i><span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span></i>: <a href="{{ site.baseurl }}{{ post.url }}">
+      <span style="font-weight: normal; font-size: 12pt;" class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>: <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h3>
