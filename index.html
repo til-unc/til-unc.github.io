@@ -4,27 +4,28 @@ layout: default
 
 <h2>Members</h2>
 <ul>
-  <li>
+	<li><img src="ben.png" /> 
     <a href="https://unclineberger.org/vincent/">Ben Vincent, MD</a>
   </li>
   <li>
+	<img src="alex.png" />
     <a href="http://rubinsteyn.web.unc.edu">Alex Rubinsteyn, PhD</a>
   </li>
   <li>
+	  <img src="jared.png" />
     <a href="https://unclineberger.org/directory/jared-weiss/">Jared Weiss, MD</a>
   </li>
 </ul>
 
 <h2>Blog Posts</h2>
-{% for post in site.posts %}
+{%- for post in site.posts -%}
   <div class="post">
     <h3 class="post-title">
       <i><span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span></i>: <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
     </h3>
-    
-    {{ post.excerpt }}...<a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    {{- post.excerpt -}}...<a href="{{ site.baseurl }}{{ post.url }}">read more</a>
    
   </div>
-{% endfor %}
+{%- endfor -%}
