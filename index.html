@@ -15,17 +15,20 @@ layout: default
 	<img src="jared.png" style="border-width: 1px; padding: 1em;" width="100" />
 	<a href="https://unclineberger.org/directory/jared-weiss/" style="font-weight: bold;">Jared Weiss, MD</a>
 </p>
+<h2>Open Positions</h2>
+<h3>TIL</h3>
+<h3>Rubinsteyn Lab</h3>
 
 
 <h2>Blog Posts</h2>
 {%- for post in site.posts -%}
   <div class="post">
-    <h3 class="post-title">
+    <h4 class="post-title">
       <span style="font-weight: normal; font-size: 12pt;" class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>: <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h3>
-    {{- post.excerpt -}}...<a href="{{ site.baseurl }}{{ post.url }}">read more</a>
+    </h4>
+    {{- post.excerpt | strip -}}...<a href="{{ site.baseurl }}{{ post.url }}">read more</a>
    
   </div>
 {%- endfor -%}
